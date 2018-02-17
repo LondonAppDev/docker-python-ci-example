@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  dev:
+    build:
+      context: .
+    volumes:
+      - ./app:/app
+    command: python app.py
+
+  test:
+    build:
+      context: .
+    volumes:
+      - ./app:/app
+    command: pytest
