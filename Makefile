@@ -1,7 +1,6 @@
-# Test
 
 test:
-	@docker-compose build dev
+	@docker-compose build
 	@docker-compose run test
 
 .PHONY: test
