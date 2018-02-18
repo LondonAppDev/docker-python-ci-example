@@ -11,6 +11,7 @@ services:
   test:
     build:
       context: .
+      dockerfile: Dockerfile.test
     volumes:
       - ./app:/app
     command: pytest
